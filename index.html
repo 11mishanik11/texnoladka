@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="assets/css/style.min.css" rel="stylesheet">
+    <title>Главная</title>
+</head>
+
+<body>
+    <!-- Спрайты -->
+
+    <svg style="display: none">
+        <symbol id="vk" viewBox="0 0 20.969 11">
+            <g>
+                <path d="M393.048,5176.99c0.7,0.63,1.43,1.23,2.054,1.92a5.58,5.58,0,0,1,.736.98,0.7,0.7,0,0,1-.465,1.1h-3.055a2.487,2.487,0,0,1-1.945-.73c-0.423-.4-0.815-0.83-1.221-1.24a2.59,2.59,0,0,0-.55-0.45,0.656,0.656,0,0,0-1.017.22,2.821,2.821,0,0,0-.322,1.33c-0.033.66-.25,0.84-0.973,0.87a8.32,8.32,0,0,1-4.371-.87,9.432,9.432,0,0,1-2.942-2.56,33.647,33.647,0,0,1-3.871-6.39c-0.244-.51-0.066-0.78.534-0.79q1.5-.015,2.991,0a0.876,0.876,0,0,1,.83.58,16.684,16.684,0,0,0,2.027,3.48,3,3,0,0,0,.766.78,0.479,0.479,0,0,0,.791-0.22,2.268,2.268,0,0,0,.176-0.73,10.122,10.122,0,0,0-.05-2.56,1.1,1.1,0,0,0-.98-0.97c-0.292-.05-0.248-0.15-0.107-0.31a1.145,1.145,0,0,1,.937-0.43h3.453a0.777,0.777,0,0,1,.738.83l0,3.56a1.023,1.023,0,0,0,.487.91,0.706,0.706,0,0,0,.69-0.32,10.828,10.828,0,0,0,1.944-2.77c0.234-.44.435-0.89,0.63-1.34a0.735,0.735,0,0,1,.78-0.5h3.323a1.44,1.44,0,0,1,.294.02c0.56,0.09.713,0.31,0.54,0.82a7.523,7.523,0,0,1-1.321,2.12c-0.554.71-1.147,1.4-1.7,2.11a0.926,0.926,0,0,0,.162,1.55h0Z" transform="translate(-375 -5170)" />
+            </g>
+        </symbol>
+
+        <symbol id="tg" viewBox="0 0 19 16">
+            <g>
+                <path d="M447.7,5168.09l-16.817,6.52c-1.148.46-1.141,1.1-.211,1.39l4.318,1.35,9.989-6.33c0.473-.29.9-0.14,0.55,0.18l-8.094,7.34h0l0,0.01-0.3,4.47a1.117,1.117,0,0,0,.874-0.44l2.1-2.05,4.362,3.24a0.956,0.956,0,0,0,1.582-.75l2.864-13.57C449.205,5168.27,448.464,5167.74,447.7,5168.09Z" transform="translate(-430 -5168)" />
+            </g>
+        </symbol>
+
+        <symbol id="youtube" viewBox="0 0 20 14">
+            <g>
+                <path d="M505.651,5171.25a2.537,2.537,0,0,0-2.161-1.98,103.982,103.982,0,0,0-14.977,0,2.537,2.537,0,0,0-2.16,1.98,32.248,32.248,0,0,0,0,9.49,2.535,2.535,0,0,0,2.161,1.98,100.265,100.265,0,0,0,14.976,0,2.539,2.539,0,0,0,2.161-1.98A32.523,32.523,0,0,0,505.651,5171.25Zm-12.233,7.86v-6.64c2.119,1.11,4.225,2.22,6.357,3.33C497.649,5176.91,495.543,5178.01,493.418,5179.11Z" transform="translate(-486 -5169)" />
+            </g>
+        </symbol>
+
+        <symbol id="arrow" viewBox="0 0 96 96">
+            <g>
+                <path d="M12,52h62.344L53.172,73.172c-1.562,1.562-1.562,4.094,0,5.656c1.562,1.562,4.095,1.562,5.657,0l28-28
+			c1.562-1.562,1.562-4.095,0-5.656l-28-28C58.048,16.391,57.024,16,56,16c-1.023,0-2.047,0.391-2.828,1.172
+			c-1.562,1.562-1.562,4.095,0,5.656L74.344,44H12c-2.209,0-4,1.791-4,4S9.791,52,12,52z" />
+            </g>
+        </symbol>
+    </svg>
+
+    <!-- -------------------------------------------- -->
+    <div class="wrapper">
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header__inner">
+                    <img class="header__logo" src="assets/images/logo.png" alt="">
+
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Главная</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Услуги</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Проекты</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Контакты</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Еще</a>
+                            </li>
+                        </ul>
+                        <a class="btn  btn--light menu__btn" href="mailto:info@mail.ru">shijan-@inbox.ru</a>
+                        <a class="btn  menu__btn" href="tel:88008888888">8 800 888 88 88</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="page">
+
+            <!-- Поправить классы -->
+            <div class="intro">
+                <div class="intro-slider">
+                    <div class="intro-slider__slide">
+                        <div class="intro__inner">
+                            <div class="intro__img">
+                                <img src="assets//images/intro/slider-01.jpg" alt="">
+                            </div>
+                            <div class="container">
+                                <div class="intro__info">
+                                    <div class="intro__title">
+                                        <span class="color-red">Эффективные решения</span> в строительно-монтажной сфере 1
+                                    </div>
+                                    <div class="intro__sub-title">
+                                        Высокая квалификация сотрудников нашей компании гарантирует успешное решение инженерных и управленческих задач любой сложности.
+                                    </div>
+                                    <a class="btn  btn--border  intro__btn" href="#">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="intro-slider__slide">
+                        <div class="intro__inner">
+                            <div class="intro__img">
+                                <img src="assets//images/intro/slider-01.jpg" alt="">
+                            </div>
+                            <div class="container">
+                                <div class="intro__info">
+                                    <div class="intro__title">
+                                        <span class="color-red">Эффективные решения</span> в строительно-монтажной сфере 1
+                                    </div>
+                                    <div class="intro__sub-title">
+                                        Высокая квалификация сотрудников нашей компании гарантирует успешное решение инженерных и управленческих задач любой сложности.
+                                    </div>
+                                    <a class="btn  btn--border  intro__btn" href="#">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="intro-slider__slide">
+                        <div class="intro__inner">
+                            <div class="intro__img">
+                                <img src="assets//images/intro/slider-01.jpg" alt="">
+                            </div>
+                            <div class="container">
+                                <div class="intro__info">
+                                    <div class="intro__title">
+                                        <span class="color-red">Эффективные решения</span> в строительно-монтажной сфере 1
+                                    </div>
+                                    <div class="intro__sub-title">
+                                        Высокая квалификация сотрудников нашей компании гарантирует успешное решение инженерных и управленческих задач любой сложности.
+                                    </div>
+                                    <a class="btn  btn--border  intro__btn" href="#">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="intro-slider__slide">
+                        <div class="intro__inner">
+                            <div class="intro__img">
+                                <img src="assets//images/intro/slider-01.jpg" alt="">
+                            </div>
+                            <div class="container">
+                                <div class="intro__info">
+                                    <div class="intro__title">
+                                        <span class="color-red">Эффективные решения</span> в строительно-монтажной сфере 1
+                                    </div>
+                                    <div class="intro__sub-title">
+                                        Высокая квалификация сотрудников нашей компании гарантирует успешное решение инженерных и управленческих задач любой сложности.
+                                    </div>
+                                    <a class="btn  btn--border  intro__btn" href="#">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="services">
+                <div class="container">
+                    <h2 class="head-title services__title">Услуги</h2>
+
+                    <div class="services__inner">
+                        <a class="services__col" href="#">
+                            <div class="services__item">
+                                <img class="services__img" src="assets/images/services/5808874_781.png" alt="#">
+                                <div class="setvices__text">Строительно-монтажными работами</div>
+                            </div>
+                        </a>
+
+                        <a class="services__col" href="#">
+                            <div class="services__item">
+                                <img class="services__img" src="assets/images/services/5808874_781.png" alt="#">
+                                <div class="setvices__text">Электромонтаж</div>
+                            </div>
+                        </a>
+
+                        <a class="services__col" href="#">
+                            <div class="services__item">
+                                <img class="services__img" src="assets/images/services/5808874_781.png" alt="#">
+                                <div class="setvices__text">Монтаж систем вентиляции и кондиционирования</div>
+                            </div>
+                        </a>
+
+                        <a class="services__col" href="#">
+                            <div class="services__item">
+                                <img class="services__img" src="assets/images/services/5808874_781.png" alt="#">
+                                <div class="setvices__text">Монтаж слаботочных систем</div>
+                            </div>
+                        </a>
+
+                        <a class="services__col" href="#">
+                            <div class="services__item">
+                                <img class="services__img" src="assets/images/services/5808874_781.png" alt="#">
+                                <div class="setvices__text">Монтаж систем холодного и горячего водоснабжения и отопления</div>
+                            </div>
+                        </a>
+
+                        <a class="services__col" href="#">
+                            <div class="services__item">
+                                <img class="services__img" src="assets/images/services/5808874_781.png" alt="#">
+                                <div class="setvices__text">Дополнительная профессиональная подготовка</div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div> <!--/.container-->
+            </section>
+
+            <section class="projects  page__section">
+                <div class="container">
+                    <h2 class="head-title">Проекты</h2>
+
+                    <div class="projects-slider">
+                        <div class="projects-slider__wrapper">
+
+                            <div class="projects-slider__slide">
+                                <div class="projects-slider__photo">
+                                    <img src="assets/images/slider/1.png" alt="">
+                                </div>
+                                <div class="projects-slider__content">
+                                    <div class="projects-slider__top">
+                                        <div class="projects-slider__suptitle">Монтаж систем холодного и горячего водоснабжения и отопления 1</div>
+                                        <a class="projects-slider__more" href="#">
+                                            Подробнее
+                                            <svg class="projects-slider__icon">
+                                                <use href='#arrow'>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="projects-slider__info">
+                                        <h3 class="projects-slider__title">Пример длинного Названия проекта</h3>
+                                        <div class="projects-slider__text">
+                                            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi
+                                        </div>
+                                        <div class="projects-slider__group">
+                                            <div class="projects-slider__image">
+                                                <img src="assets/images/slider/2.png" alt="">
+                                            </div>
+                                            <div class="projects-slider__image">
+                                                <img src="assets/images/slider/3.png" alt="">
+                                            </div>
+                                            <div class="projects-slider__image">
+                                                <img src="assets/images/slider/4.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="projects-slider__slide">
+                                <div class="projects-slider__photo">
+                                    <img src="assets/images/slider/1.png" alt="">
+                                </div>
+                                <div class="projects-slider__content">
+                                    <div class="projects-slider__top">
+                                        <div class="projects-slider__suptitle">Монтаж систем холодного и горячего водоснабжения и отопления 2</div>
+                                        <a class="projects-slider__more" href="#">
+                                            Подробнее
+                                            <svg class="projects-slider__icon">
+                                                <use href='#arrow'>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="projects-slider__info">
+                                        <h3 class="projects-slider__title">Пример длинного Названия проекта</h3>
+                                        <div class="projects-slider__text">
+                                            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi
+                                        </div>
+                                        <div class="projects-slider__group">
+                                            <div class="projects-slider__image">
+                                                <img src="assets/images/slider/2.png" alt="">
+                                            </div>
+                                            <div class="projects-slider__image">
+                                                <img src="assets/images/slider/3.png" alt="">
+                                            </div>
+                                            <div class="projects-slider__image">
+                                                <img src="assets/images/slider/4.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="projects-slider__bottom">
+                            <div class="projects-slider__nav">
+                                <div class="projects-slider__prev">Назад</div>
+                                <div class="projects-slider__next">Вперед</div>
+                            </div>
+                            <a class="btn projects-slider__btn" href="#">Все проекты</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="diplomas  page__section">
+                <div class="container">
+
+                    <div class="diplomas__header">
+                        <h2 class="head-title diplomas__title">Сертификаты</h2>
+
+                        <a class="diblomas__all" href="#">
+                            Все документы
+                            <svg class="diblomas__icon">
+                                <use href='#arrow'>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="diplomas-slider">
+                        <div class="diplomas-slider__slide">
+                            <div class="diplomas__image">
+                                <img class="diplomas__img" src="assets/images/diplomas/1.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="diplomas-slider__slide">
+                            <div class="diplomas__image">
+                                <img class="diplomas__img" src="assets/images/diplomas/1.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="diplomas-slider__slide">
+                            <div class="diplomas__image">
+                                <img class="diplomas__img" src="assets/images/diplomas/1.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="diplomas-slider__slide">
+                            <div class="diplomas__image">
+                                <img class="diplomas__img" src="assets/images/diplomas/1.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="diplomas-slider__slide">
+                            <div class="diplomas__image">
+                                <img class="diplomas__img" src="assets/images/diplomas/1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!--/.container-->
+            </section>
+
+            <section class="about  page__section">
+                <div class="container">
+                    <h2 class="head-title">O нас</h2>
+
+                    <div class="about__inner">
+                        <div class="about__content">
+                            <p class="about__text">
+                                This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+                            </p>
+
+                            <div class="about__statistics">
+                                <div class="about__item">
+                                    <span class="about__num">10</span>
+                                    <div class="about__info">успешно работаем в строительно-монтажной сферее</div>
+                                </div>
+
+                                <div class="about__item">
+                                    <span class="about__num">109</span>
+                                    <div class="about__info">успешно работаем в строительно-монтажной сферее</div>
+                                </div>
+
+                                <div class="about__item">
+                                    <span class="about__num">109</span>
+                                    <div class="about__info">успешно работаем в строительно-монтажной сферее</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about__image">
+                            <img src="assets/images/about/man.png" alt="" class="about__photo">
+                        </div>
+                    </div>
+
+                    <a class="btn about__btn" href="#">Подробнее</a>
+                </div>
+            </section>
+
+            <section class="news  page__section">
+                <div class="container">
+
+                    <div class="news__header">
+                        <h2 class="head-title">Новости</h2>
+                        <a class="news__more" href="#">
+                            Подробнее
+                            <svg class="diblomas__icon">
+                                <use href='#arrow'>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="news__inner">
+                        <div class="news__item">
+                            <img class="news__img" src="assets/images/news/news.jpg" alt="#">
+                            <div class="news__info">
+                                <div class="news__date">
+                                    <span class="news__date-num">06</span> марта
+                                </div>
+                                <div class="news__headline">Пример очень длинного названия и заголовка</div>
+                            </div>
+                        </div>
+
+                        <div class="news__item">
+                            <img class="news__img" src="assets/images/news/news.jpg" alt="#">
+                            <div class="news__info">
+                                <div class="news__date">
+                                    <span class="news__date-num">06</span> марта
+                                </div>
+                                <div class="news__headline">Пример очень длинного названия и заголовка</div>
+                            </div>
+                        </div>
+
+                        <div class="news__item">
+                            <img class="news__img" src="assets/images/news/news.jpg" alt="#">
+                            <div class="news__info">
+                                <div class="news__date">
+                                    <span class="news__date-num">06</span> марта
+                                </div>
+                                <div class="news__headline">Пример очень длинного названия и заголовка</div>
+                            </div>
+                        </div>
+
+                        <div class="news__item">
+                            <img class="news__img" src="assets/images/news/news.jpg" alt="#">
+                            <div class="news__info">
+                                <div class="news__date">
+                                    <span class="news__date-num">06</span> марта
+                                </div>
+                                <div class="news__headline">Пример очень длинного названия и заголовка</div>
+                            </div>
+                        </div>
+
+                        <div class="news__item">
+                            <img class="news__img" src="assets/images/news/news.jpg" alt="#">
+                            <div class="news__info">
+                                <div class="news__date">
+                                    <span class="news__date-num">06</span> марта
+                                </div>
+                                <div class="news__headline">Пример очень длинного названия и заголовка</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= -->
+            <section class="contact">
+                <div class="container">
+
+                    <h6 class="contact__suptitle">
+                        Свяжитесь с нами
+                    </h6>
+
+                    <div class="contact__inner">
+                        <div class="contact__title">
+                            Задать вопрос или обратиться за услугой
+                        </div>
+
+                        <div class="contact__forma">
+
+                            <a href="#" class="btn btn__contact">
+                                Отправить заявку
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <!-- ================= -->
+
+        </main>
+
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="footer__inner">
+
+                    <div class="footer__col">
+                        <img class="footer__logo" src="assets/images/logo.png" alt="">
+                        <div class="footer__slogan">Небольшой краткий лозунг</div>
+                        <div class="footer__socials  socials">
+                            <a class="socials__link" href="#">
+                                <svg class="socials__icon">
+                                    <use href='#vk'>
+                                </svg>
+                            </a>
+
+                            <a class="socials__link" href="#">
+                                <svg class="socials__icon">
+                                    <use href='#tg'>
+                                </svg>
+                            </a>
+
+                            <a class="socials__link" href="#">
+                                <svg class="socials__icon">
+                                    <use href='#youtube'>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__col">
+                        <div class="footer__title">Направления</div>
+
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Строительно-монтажными работы</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Электромонтаж</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Монтаж систем вентиляции и кондиционирования</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Монтаж слаботочных систем</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Монтаж систем холодного и горячего водоснабжения и отопления</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Дополнительная профессиональная подготовка</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="footer__col">
+                        <div class="footer__title">Разделы сайта</div>
+
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">О нас</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Наши проекты</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Новости</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Статьи</a>
+                            </li>
+                            <a href="#" class="footer__link">Документы и сертификаты</a>
+                            <a href="#" class="footer__link">Контакты</a>
+                        </ul>
+
+                    </div>
+
+                    <div class="footer__col">
+                        <div class="footer__title">Контакты</div>
+
+                        <div class="contacts">
+                            <a class="contacts__link" href="tel:8 911 968 99 09">
+                                <img src="assets/images/contacts/phone.svg" alt="">
+                                8 911 968 99 09
+                            </a>
+                            <a class="contacts__link" href="mailto:shijan-@inbox.ru">
+                                <img src="assets/images/contacts/mail.svg" alt="">
+                                shijan-@inbox.ru
+                            </a>
+                            <div class="contacts__link  contacts__link--tdn">
+                                <img src="assets/images/contacts/point.svg" alt="">
+                                Санкт-Петербург, ул. Пример названия, д6, оф 320
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="footer__copyright">
+                    <div class="footer__text">© 2023 «Техналадка», Все права защищены.</div>
+                    <div class="footer__box">
+                        <a class="footer__copyright-link" href="#">Политика конфиденциальности</a>
+                        <a class="footer__copyright-link" href="#">Карта сайта</a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/scripts/app.min.js"></script>
+</body>
+
+</html>
