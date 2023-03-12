@@ -6,13 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link href="assets/css/style.min.css" rel="stylesheet">
+    <link href="assets/css/style.min.css?v=1.1.1" rel="stylesheet">
     <title>Главная</title>
 </head>
 
 <body>
     <!-- Спрайты -->
-
     <svg style="display: none">
         <symbol id="vk" viewBox="0 0 20.969 11">
             <g>
@@ -48,27 +47,36 @@
                 <div class="header__inner">
                     <img class="header__logo" src="assets/images/logo.png" alt="">
 
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a class="menu__link" href="#">Главная</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#">Услуги</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#">Проекты</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#">Контакты</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#">Еще</a>
-                            </li>
-                        </ul>
-                        <a class="btn  btn--light menu__btn" href="mailto:info@mail.ru">shijan-@inbox.ru</a>
-                        <a class="btn  menu__btn" href="tel:88008888888">8 800 888 88 88</a>
-                    </nav>
+                    <div class="header__right">
+                        <nav class="menu" id="header-menu">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Главная</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Услуги</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Проекты</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Контакты</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Еще</a>
+                                </li>
+                            </ul>
+                            <a class="btn  btn--light menu__btn" href="mailto:info@mail.ru">shijan-@inbox.ru</a>
+                            <a class="btn  menu__btn" href="tel:88008888888">8 800 888 88 88</a>
+                        </nav>
+                        <div class="header__group">
+                            <a class="btn  btn--light header__btn" href="mailto:info@mail.ru">shijan-@inbox.ru</a>
+                            <a class="btn  header__btn" href="tel:88008888888">8 800 888 88 88</a>
+                        </div>
+                        <div class="burger" id="burger" aria-controls="header-menu">
+                            <span></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -85,7 +93,7 @@
                             </div>
                             <div class="container">
                                 <div class="intro__info">
-                                    <div class="intro__title">
+                                    <div class="intro__title  head-title">
                                         <span class="color-red">Эффективные решения</span> в строительно-монтажной сфере 1
                                     </div>
                                     <div class="intro__sub-title">
@@ -104,8 +112,8 @@
                             </div>
                             <div class="container">
                                 <div class="intro__info">
-                                    <div class="intro__title">
-                                        <span class="color-red">Эффективные решения</span> в строительно-монтажной сфере 1
+                                    <div class="intro__title  head-title">
+                                        <span class="color-red">Эффективные решения</span> в строительно-монтажной сфере 2
                                     </div>
                                     <div class="intro__sub-title">
                                         Высокая квалификация сотрудников нашей компании гарантирует успешное решение инженерных и управленческих задач любой сложности.
@@ -123,8 +131,8 @@
                             </div>
                             <div class="container">
                                 <div class="intro__info">
-                                    <div class="intro__title">
-                                        <span class="color-red">Эффективные решения</span> в строительно-монтажной сфере 1
+                                    <div class="intro__title  head-title">
+                                        <span class="color-red">Эффективные решения</span> в строительно-монтажной сфере 3
                                     </div>
                                     <div class="intro__sub-title">
                                         Высокая квалификация сотрудников нашей компании гарантирует успешное решение инженерных и управленческих задач любой сложности.
@@ -142,8 +150,8 @@
                             </div>
                             <div class="container">
                                 <div class="intro__info">
-                                    <div class="intro__title">
-                                        <span class="color-red">Эффективные решения</span> в строительно-монтажной сфере 1
+                                    <div class="intro__title  head-title">
+                                        <span class="color-red">Эффективные решения</span> в строительно-монтажной сфере 4
                                     </div>
                                     <div class="intro__sub-title">
                                         Высокая квалификация сотрудников нашей компании гарантирует успешное решение инженерных и управленческих задач любой сложности.
@@ -285,8 +293,16 @@
                         </div>
                         <div class="projects-slider__bottom">
                             <div class="projects-slider__nav">
-                                <div class="projects-slider__prev">Назад</div>
-                                <div class="projects-slider__next">Вперед</div>
+                                <div class="projects-slider__prev">
+                                    <svg>
+                                        <use href='#arrow'>
+                                    </svg>
+                                </div>
+                                <div class="projects-slider__next">
+                                    <svg>
+                                        <use href='#arrow'>
+                                    </svg>
+                                </div>
                             </div>
                             <a class="btn projects-slider__btn" href="#">Все проекты</a>
                         </div>
@@ -376,7 +392,7 @@
                         </div>
                     </div>
 
-                    <a class="btn about__btn" href="#">Подробнее</a>
+                    <div class="about__bottom"><a class="btn about__btn" href="#">Подробнее</a></div>
                 </div>
             </section>
 
@@ -384,7 +400,7 @@
                 <div class="container">
 
                     <div class="news__header">
-                        <h2 class="head-title">Новости</h2>
+                        <h2 class="head-title  news__title">Новости</h2>
                         <a class="news__more" href="#">
                             Подробнее
                             <svg class="diblomas__icon">

@@ -22,6 +22,48 @@ function headerFixed() {
         bodyPage.style.paddingTop = null;
     }
 }
+const burgerBtn = document.querySelector('#burger')
+const headerMenu = document.querySelector('#header-menu')
+
+
+bodyPage.onresize = function() {
+    if(window.innerWidth < 1189) {
+        burgerBtn.setAttribute('aria-expanded', 'false')
+        headerMenu.setAttribute('aria-hidden', 'true')
+    } else {
+        burgerBtn.removeAttribute('aria-expanded')
+        headerMenu.removeAttribute('aria-hidden')
+    }
+}
+
+
+burgerBtn.onclick = function() {
+    if(headerMenu.classList.contains('open')) {
+        menuHide()
+    }
+    else {
+        menuShow()
+    }
+}
+
+function menuShow() {
+    headerMenu.classList.add('open')
+    headerMenu.setAttribute('aria-hidden', 'false')
+    burgerBtn.setAttribute('aria-expanded', 'true')
+    bodyPage.classList.add('hidden')
+
+}
+
+function menuHide() {
+    headerMenu.classList.remove('open')
+    headerMenu.setAttribute('aria-hidden', 'true')
+    burgerBtn.setAttribute('aria-expanded', 'false')
+
+    bodyPage.classList.remove('hidden')
+}
+
+
+// JQuery ==================
 $(document).ready(function() {
 
     // Слайдер на главной странице
@@ -58,5 +100,21 @@ $(document).ready(function() {
     $('.diplomas-slider').slick({
         slidesToShow: 4,
         arrows: false,
+        infinite: false,
+
+        responsive: [
+            {
+              breakpoint: 769,
+              settings: {
+                slidesToShow: 3,
+              }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                  slidesToShow: 2,
+                }
+              },
+        ]
     });
 });
